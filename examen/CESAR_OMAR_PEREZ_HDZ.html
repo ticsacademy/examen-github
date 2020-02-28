@@ -75,7 +75,10 @@
                 </li>
                 <li>
                     <h3>Cuales son los pasos para conectar git con github?</h3>
-                    [Pon tu respuesta]
+                    lo primero es generar una llave SSH, eso se genera con el siguiente comando [ ssh-keygen -t rsa -b 4096 -C "tu-email@example.com" ], despues ejecutar el comando [ ssh-add ~/.ssh/id_rsa ],
+                    para agregarlo y que el sistema de git lo reconozca, despues se ejecuta [ cat ~/.ssh/id_rsa.pub ] para que nos muestre la llave, copiamos lo que nos aparece,
+                    ahora nos vamos a github.com y nos vamos al apartado de <b> Settings </b>, buscamos la opcion de <b>SSH and GPG keys</b>, le damos al boton de  <b>NEW SSH KEY</b> y pegamos todo lo que copiamos 
+                    anteriormente y con eso ya quedaria, solo seria crear un repositorio nuevo y seguir los pasos que se indican.
                 </li>
                 <li>
                     <h3>Cómo puedo crear un alias en git?</h3>
