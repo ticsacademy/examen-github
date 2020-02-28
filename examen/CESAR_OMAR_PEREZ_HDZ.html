@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>.: Examen :.</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecera">
+            <img id="logo"
+                src="https://cdn2.iconfinder.com/data/icons/seo-and-website/100/SEO_blog_optimation_article-64.png" />
+            Examen
+            <span id="tagline">Git y Github</span>
+        </div>
+        <div id="post">
+            <h1>Alumn@: Cesar Omar Perez Hdz</h1>
+            <ol>
+                <li>
+                    <h3>Que es un sistema de control de versiones?</h3>
+                    Se podria decir que es un sistema que nos permite controlar todos los cambios realizados a un documento
+                </li>
+                <li>
+                    <h3>Cual es la diferencia entre git y github?</h3>
+                    git se utiliza localmente, y github se utiliza ya cuando se requiere colaborar con mas personas de manera remota.
+                </li>
+                <li>
+                    <h3>Cómo creo una rama en git?</h3>
+                    git checkout -b [ nombre que va a tener tu rama ], o git branch [ nombre que va a tener tu rama ]
+                </li>
+                <li>
+                    <h3>Cómo clono un repositorio?</h3>
+                    vas al repositorio que quieres clonar, le das al boton de [ Clone or download ] y copias esa url, en consola tecleas
+                    [ git clone "url copiada" ] y tendas la carpeta con los archivos que contiene el repositorio
+                </li>
+                <li>
+                    <h3>Cómo puedo bajar los ultimos cambios de un repositorio?</h3>
+                    primero se realiza un git fetch, despues un git pull
+                </li>
+                <li>
+                    <h3>Cómo puedo gener un tag?</h3>
+                    despues de hacer un commit se escribe en consola el comando de git [ git tag "numero de la version" -m "mensage del tag" ]
+                </li>
+                <li>
+                    <h3>Cómo hago una mezcla de ramas?</h3>
+                    primero me posisiono en la rama destino y procedo a ejecutar el comando [ git merge "rama-a-combinar" ]
+                </li>
+                <li>
+                    <h3>Cómo puedo moverme a un commit especifico?</h3>
+                    se puede hacer tecleando [ git checkout "id-del-commit-a-movernos" ]
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar una rama?</h3>
+                    aqui hay dos formas de realizar la eliminación, la primera es antes asegurarnos de que la rama haya sido combinada [ git branch -d nombre-de-la-rama ],
+                    la otra es forzandola y sin combinar [ git branch -D nombre-de-la-rama ]
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar un tag?</h3>
+                    se ejecutara [ git tag -d "nombre del tag" ]
+                </li>
+                <li>
+                    <h3>Cómo puedo ver los cambios que estan por enviarse al repositorio?</h3>
+                    se ejecuta el comando git status, para ver que esta añadido a la zona de espera ( se podria decir ) y que no se ha agregado
+                </li>
+                <li>
+                    <h3>Para que sirve el comando <em>git remote -v?</em></h3>
+                    te permite ver a que repositorio remoto se puede hacer push 
+                </li>
+                <li>
+                    <h3>Cómo le digo a git cual es mi email y correo?</h3>
+                    con el comando [ git config --global user.name "Nombre" ] es para decirle a git que ese es tu nombre,
+                    con el comando [ git confi --global user.email "tu correo" ] es para decirle a git que ese es mi correo,
+                    estos comandos se ejecutaran de manera global
+                </li>
+                <li>
+                    <h3>Cuales son los pasos para conectar git con github?</h3>
+                    lo primero es generar una llave SSH, eso se genera con el siguiente comando [ ssh-keygen -t rsa -b 4096 -C "tu-email@example.com" ], despues ejecutar el comando [ ssh-add ~/.ssh/id_rsa ],
+                    para agregarlo y que el sistema de git lo reconozca, despues se ejecuta [ cat ~/.ssh/id_rsa.pub ] para que nos muestre la llave, copiamos lo que nos aparece,
+                    ahora nos vamos a github.com y nos vamos al apartado de <b> Settings </b>, buscamos la opcion de <b>SSH and GPG keys</b>, le damos al boton de  <b>NEW SSH KEY</b> y pegamos todo lo que copiamos 
+                    anteriormente y con eso ya quedaria, solo seria crear un repositorio nuevo y seguir los pasos que se indican.
+                </li>
+                <li>
+                    <h3>Cómo puedo crear un alias en git?</h3>
+                    para hacer un alias, se teclea el comando [ git config --global alias."nombre del alias" "comando de git" ].
+                </li>
+            </ol>
+        </div>
+        <div id="footer">
+            <img height="50" src="https://repository-images.githubusercontent.com/242781977/c5441500-56ee-11ea-99dc-6a054dbe381d" alt="ticsacademy">
+        </div>
+    </div>
+</body>
+
+</html>
